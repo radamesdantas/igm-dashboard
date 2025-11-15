@@ -60,7 +60,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Iniciar servidor
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`\n🚀 Servidor rodando em http://localhost:${PORT}`);
   console.log(`📊 Dashboard: http://localhost:${PORT}/api/dashboard`);
   console.log(`📋 Serviços: http://localhost:${PORT}/api/servicos\n`);
