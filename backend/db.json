@@ -1,0 +1,652 @@
+{
+  "servicos": [
+    {
+      "id": 1,
+      "numero": 1,
+      "nome": "Segurança",
+      "supervisor": "Marcos",
+      "coordenador": "Assis",
+      "created_at": "2025-11-15T15:58:19.780Z"
+    },
+    {
+      "id": 2,
+      "numero": 2,
+      "nome": "Transporte",
+      "supervisor": null,
+      "coordenador": null,
+      "created_at": "2025-11-15T15:58:19.786Z"
+    },
+    {
+      "id": 3,
+      "numero": 3,
+      "nome": "Recepção",
+      "supervisor": null,
+      "coordenador": "Edilson Nascimento",
+      "created_at": "2025-11-15T15:58:19.791Z"
+    },
+    {
+      "id": 4,
+      "numero": 4,
+      "nome": "Som",
+      "supervisor": "Lima",
+      "coordenador": "Hugo e Maykon",
+      "created_at": "2025-11-15T15:58:19.795Z"
+    },
+    {
+      "id": 5,
+      "numero": 5,
+      "nome": "Hospedagem",
+      "supervisor": null,
+      "coordenador": "Roberto Alves",
+      "created_at": "2025-11-15T15:58:19.798Z"
+    },
+    {
+      "id": 6,
+      "numero": 6,
+      "nome": "Música",
+      "supervisor": null,
+      "coordenador": "Hugo",
+      "created_at": "2025-11-15T15:58:19.801Z"
+    },
+    {
+      "id": 7,
+      "numero": 7,
+      "nome": "Literatura",
+      "supervisor": null,
+      "coordenador": "Bianca",
+      "created_at": "2025-11-15T15:58:19.807Z"
+    },
+    {
+      "id": 8,
+      "numero": 8,
+      "nome": "Infraestrutura",
+      "supervisor": "Menezes",
+      "coordenador": "Heloísa",
+      "created_at": "2025-11-15T15:58:19.810Z"
+    },
+    {
+      "id": 9,
+      "numero": 9,
+      "nome": "Jardinagem",
+      "supervisor": null,
+      "coordenador": "Rosa e Nieta",
+      "created_at": "2025-11-15T15:58:19.814Z"
+    },
+    {
+      "id": 10,
+      "numero": 10,
+      "nome": "Cantina",
+      "supervisor": null,
+      "coordenador": "Assis, Kelson, Chico Borges e Irenilson",
+      "created_at": "2025-11-15T15:58:19.819Z"
+    },
+    {
+      "id": 11,
+      "numero": 11,
+      "nome": "Limpeza",
+      "supervisor": null,
+      "coordenador": "Assis, Kelson e Chico Borges",
+      "created_at": "2025-11-15T15:58:19.822Z"
+    },
+    {
+      "id": 12,
+      "numero": 12,
+      "nome": "Casa Master",
+      "supervisor": "Irenilson e Edinor",
+      "coordenador": "Gilmar e Elilson",
+      "created_at": "2025-11-15T15:58:19.826Z"
+    },
+    {
+      "id": 13,
+      "numero": 13,
+      "nome": "Mesa do Senhor",
+      "supervisor": null,
+      "coordenador": "Geraldo, Edilson Nascimento e Elias",
+      "created_at": "2025-11-15T15:58:19.830Z"
+    },
+    {
+      "id": 14,
+      "numero": 14,
+      "nome": "Homens de Oração",
+      "supervisor": null,
+      "coordenador": "Max e Elilson",
+      "created_at": "2025-11-15T15:58:19.834Z"
+    },
+    {
+      "id": 15,
+      "numero": 15,
+      "nome": "Batismo",
+      "supervisor": null,
+      "coordenador": "Kelson e Geraldo",
+      "created_at": "2025-11-15T15:58:19.836Z"
+    },
+    {
+      "id": 16,
+      "numero": 16,
+      "nome": "Transmissão",
+      "supervisor": "Diego",
+      "coordenador": "Crislany",
+      "created_at": "2025-11-15T15:58:19.839Z"
+    },
+    {
+      "id": 17,
+      "numero": 17,
+      "nome": "Projeção",
+      "supervisor": null,
+      "coordenador": null,
+      "created_at": "2025-11-15T15:58:19.843Z"
+    },
+    {
+      "id": 18,
+      "numero": 18,
+      "nome": "Site",
+      "supervisor": null,
+      "coordenador": "Níchollas",
+      "created_at": "2025-11-15T15:58:19.847Z"
+    },
+    {
+      "id": 19,
+      "numero": 19,
+      "nome": "Avisos",
+      "supervisor": null,
+      "coordenador": "Asafe",
+      "created_at": "2025-11-15T15:58:19.851Z"
+    },
+    {
+      "id": 20,
+      "numero": 20,
+      "nome": "Mídias Sociais",
+      "supervisor": null,
+      "coordenador": "Yasmin",
+      "created_at": "2025-11-15T15:58:19.859Z"
+    },
+    {
+      "id": 21,
+      "numero": 21,
+      "nome": "MBI",
+      "supervisor": "Radamés",
+      "coordenador": "Edson",
+      "created_at": "2025-11-15T15:58:19.863Z"
+    },
+    {
+      "id": 22,
+      "numero": 22,
+      "nome": "Mulheres Conectadas",
+      "supervisor": null,
+      "coordenador": "Rosa, Toinha e Yonara",
+      "created_at": "2025-11-15T15:58:19.866Z"
+    },
+    {
+      "id": 23,
+      "numero": 22,
+      "nome": "Acessibilidade",
+      "supervisor": null,
+      "coordenador": "Marconcélio e Fernanda",
+      "created_at": "2025-11-15T15:58:19.870Z"
+    },
+    {
+      "id": 24,
+      "numero": 23,
+      "nome": "Secretaria",
+      "supervisor": null,
+      "coordenador": "Cibelle",
+      "created_at": "2025-11-15T15:58:19.875Z"
+    },
+    {
+      "id": 25,
+      "numero": 25,
+      "nome": "Finanças",
+      "supervisor": null,
+      "coordenador": "Menezes e Lima",
+      "created_at": "2025-11-15T15:58:19.878Z"
+    },
+    {
+      "id": 26,
+      "numero": 26,
+      "nome": "Central de Acolhimento",
+      "supervisor": null,
+      "coordenador": "Ozian e Wilson",
+      "created_at": "2025-11-15T15:58:19.882Z"
+    },
+    {
+      "id": 27,
+      "numero": 27,
+      "nome": "Cda",
+      "supervisor": "Lima e Diego",
+      "coordenador": "Lima e Diego",
+      "created_at": "2025-11-15T15:58:19.888Z"
+    }
+  ],
+  "acoes": [
+    {
+      "id": 1,
+      "servico_id": 1,
+      "mes": "Março",
+      "descricao": "Comprar 2 paletós e os jalecos novos e trocar as pilhas das lanternas e Realizar reunião de coordenação.",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.784Z"
+    },
+    {
+      "id": 2,
+      "servico_id": 1,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.785Z"
+    },
+    {
+      "id": 3,
+      "servico_id": 2,
+      "mes": "Março",
+      "descricao": "Definir se Herrera realmente vai ficar a frente do serviço, Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.788Z"
+    },
+    {
+      "id": 4,
+      "servico_id": 2,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.789Z"
+    },
+    {
+      "id": 5,
+      "servico_id": 3,
+      "mes": "Março",
+      "descricao": "Fazer armário para guardar bens e criar o setor de achados e perdidos, Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.792Z"
+    },
+    {
+      "id": 6,
+      "servico_id": 3,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.793Z"
+    },
+    {
+      "id": 7,
+      "servico_id": 4,
+      "mes": "Março",
+      "descricao": "Comprar pilhas novas para as reuniões, Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.796Z"
+    },
+    {
+      "id": 8,
+      "servico_id": 4,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.797Z"
+    },
+    {
+      "id": 9,
+      "servico_id": 5,
+      "mes": "Março",
+      "descricao": "Listar todas as casas que podem hospedar irmãos na igreja, e acompanhar os 24 leitos da cda para hospedagem de irmãos que estiverem precisando de alguma hospedagem na cidade. Ver com Roberto Alves sobre a possibilidade de hospedar Pedro Dong",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.799Z"
+    },
+    {
+      "id": 10,
+      "servico_id": 5,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.800Z"
+    },
+    {
+      "id": 11,
+      "servico_id": 6,
+      "mes": "Março",
+      "descricao": "Formar uma turma de canto e voltar as aulas de música, pelo menos 1 vez por semana, no anexo, Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.802Z"
+    },
+    {
+      "id": 12,
+      "servico_id": 6,
+      "mes": "Abril",
+      "descricao": "4/3 - O conteúdo foi melhorias práticas para que consigamos oferecer um serviço mais excelente.\n\n- O servo da musica promove a palavra cantada, então precisa estar atualizado sobre a palavra profética.\n- Problemas de ordem técnica, do áudio e da música, acontecem por falta de ensaio. Então vamos separar um tempo maior para ensaiar.\n- E necessário nos tornarmos pontuais, precisamos separar a primeira hora de ensaio só para fazer Imersão na palavra e gritos de guerra.",
+      "status": "pendente",
+      "created_at": "2025-11-15T15:58:19.805Z"
+    },
+    {
+      "id": 13,
+      "servico_id": 7,
+      "mes": "Março",
+      "descricao": "Separar o que é de Bianca e o que é da literatura da Igreja, Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.808Z"
+    },
+    {
+      "id": 14,
+      "servico_id": 7,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.809Z"
+    },
+    {
+      "id": 15,
+      "servico_id": 8,
+      "mes": "Março",
+      "descricao": "Concluir as cortinas do local e caixas de oferta, Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.812Z"
+    },
+    {
+      "id": 16,
+      "servico_id": 8,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.813Z"
+    },
+    {
+      "id": 17,
+      "servico_id": 9,
+      "mes": "Março",
+      "descricao": "Fazer catalogação das plantas do local e criar rotina de irrigação das mesmas, Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.816Z"
+    },
+    {
+      "id": 18,
+      "servico_id": 9,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.817Z"
+    },
+    {
+      "id": 19,
+      "servico_id": 10,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação. Uso de trajes, toca, luva, uso de cartão, filas, lixeiros, alguém pra recolher as bandejas",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.820Z"
+    },
+    {
+      "id": 20,
+      "servico_id": 10,
+      "mes": "Abril",
+      "descricao": "Dia 11/3 Foram atendimentos. Companheirismo,\nTrabalho em equipe\nRespeitar uns aos outros \nComo falar uns com outros \nNão transitar irmãos na cozinha sem fazer parte daquela equipe \nE vamos escolher mais 2 irmãs pra enviar pra conferência \nNão estamos servindo a homem \nE agradecimento pelo impenho dos irmãos no serviço \nE antes de tudo oração",
+      "status": "pendente",
+      "created_at": "2025-11-15T15:58:19.821Z"
+    },
+    {
+      "id": 21,
+      "servico_id": 11,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.824Z"
+    },
+    {
+      "id": 22,
+      "servico_id": 11,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.825Z"
+    },
+    {
+      "id": 23,
+      "servico_id": 12,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.828Z"
+    },
+    {
+      "id": 24,
+      "servico_id": 12,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.829Z"
+    },
+    {
+      "id": 25,
+      "servico_id": 13,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.832Z"
+    },
+    {
+      "id": 26,
+      "servico_id": 13,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.833Z"
+    },
+    {
+      "id": 27,
+      "servico_id": 15,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.837Z"
+    },
+    {
+      "id": 28,
+      "servico_id": 15,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.838Z"
+    },
+    {
+      "id": 29,
+      "servico_id": 16,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.841Z"
+    },
+    {
+      "id": 30,
+      "servico_id": 16,
+      "mes": "Abril",
+      "descricao": "Termo de imagem' assinado para as lives;",
+      "status": "pendente",
+      "created_at": "2025-11-15T15:58:19.842Z"
+    },
+    {
+      "id": 31,
+      "servico_id": 17,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.845Z"
+    },
+    {
+      "id": 32,
+      "servico_id": 17,
+      "mes": "Abril",
+      "descricao": "Compromisso de chegada com 2 horas de antecedência ao serviço (imergir e orar);",
+      "status": "pendente",
+      "created_at": "2025-11-15T15:58:19.846Z"
+    },
+    {
+      "id": 33,
+      "servico_id": 18,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.849Z"
+    },
+    {
+      "id": 34,
+      "servico_id": 18,
+      "mes": "Abril",
+      "descricao": "- Construção de um aplicativo com os gritos de guerra, imersão da semana, hinários, etc (facilitando o contato com as ferramentas atuais).",
+      "status": "pendente",
+      "created_at": "2025-11-15T15:58:19.850Z"
+    },
+    {
+      "id": 35,
+      "servico_id": 19,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.856Z"
+    },
+    {
+      "id": 36,
+      "servico_id": 19,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.857Z"
+    },
+    {
+      "id": 37,
+      "servico_id": 20,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação, Criar uma equipe de geração de conteúdo para o site da igreja, usar ferramentas de seo para atrair novas pessoas para as reuniões da igreja",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.860Z"
+    },
+    {
+      "id": 38,
+      "servico_id": 20,
+      "mes": "Abril",
+      "descricao": "- Postagem de 1 corte de mensagem ou compartilhar no Instagram p/ semana;\n- Noticiar no Instagram os posts novos que saem no site com o link nos stories;\n- Escalar 2 irmãos por sexta-feira para fazerem a cobertura do vem e vê!",
+      "status": "pendente",
+      "created_at": "2025-11-15T15:58:19.861Z"
+    },
+    {
+      "id": 39,
+      "servico_id": 21,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.864Z"
+    },
+    {
+      "id": 40,
+      "servico_id": 21,
+      "mes": "Junho",
+      "descricao": "Resumo Pauta reunião MBI -02/06/2025\n1- Conquista: Secretaria estar pronta, bem como salas estão sendo mantidas fechadas.\n- Reforçado necessidade de manter secretaria e salas organizadas.\n2- Conquista: Entrega do material didático salas e material para reposição, disponível na secretaria.\n- Reforçado a necessidade do cuidado, bem como em caso de necessidade, procurar a coordenação geral do dia.\n3- Conquista: Retomada das transcrições.\n- Está sendo feito no último domingo de cada mês,bem como foi disponibilizado um quadro (parede externa na turma de 2 e 3 anos) para exposição das fotos.\n4- Casa Kids: 04 e 05/07/2025\n- Planejamento bem consolidado;\n- Inscrições encerradas: 37 crianças \n- Foi reforçado que estamos precisando de servas e servos para cooperarem durante o evento. O nome deverá ser repassado para Lorena, Naira ou Ivonete.\n- Está aberto também para ofertas para casa Kids. Até o momento previsão de investimento de R$ 1220,00, sendo que não foi cobrada taxa de inscrição. A oferta pode ser enviada via PIX para chave: 05058714400 (Edson Marinho Alves Rodrigues).\n5- Apresentação das crianças:  10/08/2025\n- Cada sala deverá escolher um personagem bíblico que trabalhou ao longo do semestre (sábados);\n- Cada turma deve se reunir (sugestão: Online via chamada de vídeo grupo whatsapp da turma): Escolher personagem e planejar apresentação;\n- Apresentação será de 5 a 10 minutos por turma;\n- Incluir as práticas atuais: Imersão, gritos de guerra, posso orar por vc;\n- Final de junho teremos uma reunião para cada turma apresentação a proposta.\n\n6- Pontos a melhorar\n- As crianças deverão ficar na turma de acordo com sua idade. A coordenação geral dará o suporte as turmas quanto a essa questão.",
+      "status": "pendente",
+      "created_at": "2025-11-15T15:58:19.865Z"
+    },
+    {
+      "id": 41,
+      "servico_id": 22,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.867Z"
+    },
+    {
+      "id": 42,
+      "servico_id": 22,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.868Z"
+    },
+    {
+      "id": 43,
+      "servico_id": 22,
+      "mes": "Junho",
+      "descricao": "Reunião de Serviço - SDM\nData: 02/05/25\n\n# Revisão das reuniões anteriores \n\n# Sentimento:\n- O Senhor quer que haja mais companherismo entre nós, a exemplo de Paulo e Tito.\n- Ao servirmos, quem deve aparecer é o Senhor.\n- O Senhor tem uma obra exterior e a que Ele quer fazer em nós. \n- Se Jesus trabalha  eu trabalho também!\n- Não temos muitas habilidades, mas juntas podemos avançar!\n- Permanecer no Espírito é simples: basta seguir a palavra com simplicidade. \n\n# Avanços:\n- Maior cooperação das irmãs quando tem reuniões especiais: sentimento de ser abraçada. \n- O serviço é como uma orquestra: nenhuma irmã especifica aparece.\n- Orações sendo respondidas! \n- Serviço de crianças nas reuniões.\n\n# Sugestões:\n- Mostrar às irmãs que todas podem participar do serviço. \n- Incluir novas irmãs. \n- Encorajar as irmãs no privado a participar das reuniões: usar imagem com o tema da reunião. \n- É preciso ter um suporte atrás das irmãs que estão conduzindo a reunião: oração e apoio. PROGRAMAÇÃO \n(Junho/Julho/25)\n\n04/06  Café com Imersão: Opera em mim, Senhor!\n(Antônia/Selma)\n18/06 Reunião de oração \n(Celis/Ruana)\n02/07 Reunião de Oração \ncom Missão Familiar (convite para reunião especial)\n(Yonara/Edna)\n12/07 Reunião Especial: Servas Diligentes\n16/07 Reunião de Oração \nDesafio Vem e Vê\n(Rosa/Ivonete)\n30/07 Reunião de oração\n(Celiane/Mônica)",
+      "status": "pendente",
+      "created_at": "2025-11-15T15:58:19.869Z"
+    },
+    {
+      "id": 44,
+      "servico_id": 23,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.872Z"
+    },
+    {
+      "id": 45,
+      "servico_id": 23,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.873Z"
+    },
+    {
+      "id": 46,
+      "servico_id": 23,
+      "mes": "Junho",
+      "descricao": "Serviço de ACESSIBILIDADE\nComunhão - 02 JUNHO DE 2025 \n \nParticipantes: Marconcélio; Gilmar; Fernanda; Eliane; Maria Eduarda; Maykon; Irenilson.\n\n\nSobre a Audiodescrição:\nMaykon:\n- Deve funcionar para toda a reunião.\n- O irmão/irmã que está servindo deve permanecer durante toda a reunião no ambiente do serviço, mesmo que não haja irmãos utilizando o serviço no momento;\n- O acesso ao ambiente do serviço é somente para os que estão servindo \n- O chiado dos microfones é \"normal\" \n- Quem está servindo deve usar o fone para observar o retorno do som\n- Sobre as Observações quanto ao volume do som, o ajuste pode passar pela aquisição de novos fones.\n\n\nMarconcélio:\n- Estamos em ajuste onde a comunhão é importante.\n- Verificar o ruído, vibração do som\n\n\nMaria Eduarda:\n- Encorajamento para Praticar a oração, imersão antes de iniciar o serviço. \n- A sugestão é chegar meia hora antes.\n\n\nSobre a Interpretação em LIBRAS\nFernanda: \n- Possui apenas uma intérprete\n- Dificuldade de receber o esboço da mensagem com antecedência (no mínimo 1 dia). Irmãos não tem enviado em tempo hábil;\n- É necessário fazer um chamamento para mais irmãos servir. Tem 3 irmãs que estão estudando LIBRAS\n- A Troca de câmera no momento do início da mensagem compromete o início da interpretação das primeiras falas;\n- É preciso ver uma posição definitiva da interpretação de libras\n\n\n\nOrientações/Sugestões gerais:\n- A Projeção da esquerda é melhor para leitura. Deve-se orientar os irmãos para esta ala, para melhor leitura;\n- A sugestão de ouvir mais o som da voz dos irmãos da igreja cantando. Na transmissão não se ouve os irmãos louvando;\n- O irmão Irenilson ficou de verificar necessidades específicas dos irmãos da terceira idade.",
+      "status": "pendente",
+      "created_at": "2025-11-15T15:58:19.874Z"
+    },
+    {
+      "id": 47,
+      "servico_id": 24,
+      "mes": "Março",
+      "descricao": "Criado hoje 14/4/2025",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.877Z"
+    },
+    {
+      "id": 48,
+      "servico_id": 25,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação, fazer a transição dos lançamentos da planilha para o aplicativo enuves. Marcos ir a caern verificar problem de registro.",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.879Z"
+    },
+    {
+      "id": 49,
+      "servico_id": 25,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.881Z"
+    },
+    {
+      "id": 50,
+      "servico_id": 26,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.884Z"
+    },
+    {
+      "id": 51,
+      "servico_id": 26,
+      "mes": "Abril",
+      "descricao": "Não teve reunião",
+      "status": "nao_realizada",
+      "created_at": "2025-11-15T15:58:19.885Z"
+    },
+    {
+      "id": 52,
+      "servico_id": 26,
+      "mes": "Junho",
+      "descricao": "Bom dia irmãos! Ontem tivemos uma reunião no anexo da nossa central de acolhimento e o Radames pediu pra expor aqui os pontos principais que conversamos:\n\n1- Jornada novo convertido: Precisamos criar um mapa que mostre todas as etapas e pessoas(especificas) responsáveis em cada etapa desdo o contato recebido da rua até a inserção dele em um grupo de sala de oração e acompanhamento dessa sala.\n\n2- Festa do amor: continuar o contato com as pessoas que nos visitaram agendando visitas familiares(pode ser pelo GFM ou visita dinamica); utilizar a lista dos convidados no grupo da igreja pra contactar quem convidou.\n\n3- Criar uma escala no mês para acolhimento nas reuniões presenciais(preferencialmente homens):\nVer com o serviço de recepção se há visitantes e providenciar kits, e uma mesa do lanche após reunião e também tentar inserir essas pessoas em salas de orações.",
+      "status": "pendente",
+      "created_at": "2025-11-15T15:58:19.886Z"
+    },
+    {
+      "id": 53,
+      "servico_id": 27,
+      "mes": "Março",
+      "descricao": "Realizar reunião de coordenação, Confirmar os 2 ceapistas que virão para cooperar com a cda",
+      "status": "concluida",
+      "created_at": "2025-11-15T15:58:19.889Z"
+    }
+  ],
+  "reunioes": [],
+  "nextId": {
+    "servicos": 28,
+    "acoes": 54,
+    "reunioes": 1
+  }
+}
