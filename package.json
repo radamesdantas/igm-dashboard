@@ -4,13 +4,8 @@
   "description": "Sistema de Gerenciamento de Serviços - Igreja em Mossoró",
   "type": "module",
   "scripts": {
-    "install-backend": "cd backend && npm install",
-    "install-frontend": "cd frontend && npm install",
-    "build": "cd frontend && npm run build",
-    "start": "cd backend && NODE_ENV=production node server.js",
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "dev:backend": "cd backend && npm start",
-    "dev:frontend": "cd frontend && npm run dev"
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd backend && npm install && NODE_ENV=production node server.js"
   },
   "engines": {
     "node": ">=18.0.0"
