@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import db from './database.js';
+import authRouter from './routes/auth.js';
 import servicosRouter from './routes/servicos.js';
 import acoesRouter from './routes/acoes.js';
 import reunioesRouter from './routes/reunioes.js';
@@ -19,6 +20,7 @@ app.use(cors());
 app.use(express.json());
 
 // Rotas
+app.use('/api/auth', authRouter);
 app.use('/api/servicos', servicosRouter);
 app.use('/api/acoes', acoesRouter);
 app.use('/api/reunioes', reunioesRouter);
