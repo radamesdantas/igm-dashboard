@@ -1,0 +1,19 @@
+{
+  "name": "igm-dashboard-backend",
+  "version": "1.0.0",
+  "description": "Backend para sistema de gerenciamento de serviços da Igreja em Mossoró",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.5.3"
+  }
+}
