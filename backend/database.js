@@ -135,7 +135,13 @@ const database = {
         id,
         servico_id: parseInt(data.servico_id),
         mes: data.mes,
-        descricao: data.descricao,
+        descricao: data.descricao,  // What (O quê)
+        motivo: data.motivo || '',  // Why (Por quê)
+        local: data.local || '',    // Where (Onde)
+        data_prevista: data.data_prevista || '',  // When (Quando)
+        responsavel: data.responsavel || '',  // Who (Quem)
+        metodo: data.metodo || '',  // How (Como)
+        custo: data.custo || '',    // How much (Quanto)
         status: data.status || 'pendente',
         created_at: new Date().toISOString()
       };
@@ -153,6 +159,12 @@ const database = {
         servico_id: parseInt(data.servico_id),
         mes: data.mes,
         descricao: data.descricao,
+        motivo: data.motivo || '',
+        local: data.local || '',
+        data_prevista: data.data_prevista || '',
+        responsavel: data.responsavel || '',
+        metodo: data.metodo || '',
+        custo: data.custo || '',
         status: data.status
       };
       saveDb();

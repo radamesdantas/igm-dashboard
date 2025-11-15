@@ -4,6 +4,7 @@ import Servicos from './pages/Servicos'
 import ServicoDetalhes from './pages/ServicoDetalhes'
 import NovoServico from './pages/NovoServico'
 import Acoes from './pages/Acoes'
+import GerenciarAcoes from './pages/GerenciarAcoes'
 
 function App() {
   return (
@@ -38,6 +39,12 @@ function App() {
                   >
                     Ações
                   </Link>
+                  <Link
+                    to="/gerenciar-acoes"
+                    className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-100"
+                  >
+                    Gerenciar Ações
+                  </Link>
                 </div>
               </div>
             </div>
@@ -52,6 +59,7 @@ function App() {
             <Route path="/servicos/novo" element={<NovoServico />} />
             <Route path="/servicos/:id" element={<ServicoDetalhes />} />
             <Route path="/acoes" element={<Acoes />} />
+            <Route path="/gerenciar-acoes" element={<GerenciarAcoes />} />
           </Routes>
         </main>
       </div>
