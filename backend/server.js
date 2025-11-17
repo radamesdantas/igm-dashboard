@@ -3,12 +3,31 @@ import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-import db from './database.js';
+import dotenv from 'dotenv';
 import authRouter from './routes/auth.js';
 import servicosRouter from './routes/servicos.js';
 import acoesRouter from './routes/acoes.js';
 import reunioesRouter from './routes/reunioes.js';
 import metasRouter from './routes/metas.js';
+
+// Carregar variáveis de ambiente
+dotenv.config();
+
+// Escolher banco de dados baseado na variável de ambiente
+const useGoogleSheets = process.env.USE_GOOGLE_SHEETS === 'true';
+let db;
+
+if (useGoogleSheets) {
+  console.log('📊 Usando Google Sheets como banco de dados');
+  const dbSheets = await import('./database-sheets.js');
+  db = dbSheets.default;
+  // Inicializar Google Sheets
+  await db.init();
+} else {
+  console.log('📁 Usando db.json como banco de dados');
+  const dbJson = await import('./database.js');
+  db = dbJson.default;
+}
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
