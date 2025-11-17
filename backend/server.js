@@ -8,6 +8,7 @@ import authRouter from './routes/auth.js';
 import servicosRouter from './routes/servicos.js';
 import acoesRouter from './routes/acoes.js';
 import reunioesRouter from './routes/reunioes.js';
+import metasRouter from './routes/metas.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -16,7 +17,20 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middlewares
-app.use(cors());
+// Configuração de CORS para permitir acesso do frontend em produção
+const corsOptions = {
+  origin: process.env.NODE_ENV === 'production'
+    ? [
+        'https://igm-dashboard.netlify.app',
+        /\.netlify\.app$/,  // Permite qualquer subdomínio do Netlify
+        'http://localhost:3000',  // Para testes locais
+      ]
+    : '*',  // Em desenvolvimento, permite qualquer origem
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Rotas
@@ -24,6 +38,7 @@ app.use('/api/auth', authRouter);
 app.use('/api/servicos', servicosRouter);
 app.use('/api/acoes', acoesRouter);
 app.use('/api/reunioes', reunioesRouter);
+app.use('/api/metas', metasRouter);
 
 // Rota de dashboard - estatísticas gerais
 app.get('/api/dashboard', (req, res) => {
@@ -55,7 +70,9 @@ if (process.env.NODE_ENV === 'production') {
         dashboard: '/api/dashboard',
         servicos: '/api/servicos',
         acoes: '/api/acoes',
-        reunioes: '/api/reunioes'
+        reunioes: '/api/reunioes',
+        metas: '/api/metas',
+        metasStats: '/api/metas/stats/:ano'
       }
     });
   });

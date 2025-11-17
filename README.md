@@ -4,13 +4,27 @@ Sistema completo para gerenciamento dos serviços da Igreja em Mossoró, desenvo
 
 ## Funcionalidades
 
+### Gestão de Serviços
 - Dashboard com visão geral de todos os serviços
 - Gerenciamento completo de serviços (CRUD)
 - Sistema de ações mensais para cada serviço
 - Registro de reuniões com resumos e decisões
 - Filtros e busca por serviços, ações e meses
+
+### 🎯 Sistema de Metas 2026 (NOVO!)
+- Criação e gerenciamento de metas por categorias:
+  - Igreja Geral, Valentes de Davi, Serviços, Presbíteros, etc.
+- Indicadores quantitativos (KPIs)
+- Submetas e marcos intermediários
+- Acompanhamento de progresso em tempo real
+- Histórico de atualizações
+- Visualizações por categoria e status
+- Dashboard integrado com estatísticas de metas
+
+### Geral
 - Interface responsiva e moderna
 - Dados importados da planilha original
+- Deploy online (Netlify + Render)
 
 ## Tecnologias Utilizadas
 
@@ -175,6 +189,19 @@ A aplicação estará disponível em: http://localhost:3000
 - `PUT /api/reunioes/:id` - Atualizar reunião
 - `DELETE /api/reunioes/:id` - Remover reunião
 
+### Metas 2026
+- `GET /api/metas` - Listar todas as metas
+- `GET /api/metas/:id` - Obter uma meta específica
+- `GET /api/metas/stats/:ano` - Estatísticas de metas por ano
+- `POST /api/metas` - Criar nova meta
+- `PUT /api/metas/:id` - Atualizar meta
+- `PATCH /api/metas/:id/progresso` - Atualizar progresso da meta
+- `DELETE /api/metas/:id` - Remover meta
+- `GET /api/metas/:metaId/submetas` - Listar submetas
+- `POST /api/metas/:metaId/submetas` - Criar submeta
+- `PATCH /api/metas/:metaId/submetas/:id/toggle` - Marcar submeta como concluída
+- `DELETE /api/metas/:metaId/submetas/:id` - Remover submeta
+
 ### Dashboard
 - `GET /api/dashboard` - Estatísticas gerais
 
@@ -202,6 +229,44 @@ Para fazer backup:
 - Aplicativo mobile
 - Integração com calendário
 - Sistema de anexos/documentos
+
+## 🌐 Como Colocar Online
+
+### ⭐ RECOMENDADO: Deploy Completo no Netlify (Tudo em Um Lugar!)
+
+**O mais simples!** Frontend + Backend juntos no Netlify.
+
+📖 **Guia**: [`DEPLOY-NETLIFY.md`](DEPLOY-NETLIFY.md) - **10 minutos**
+
+**Vantagens:**
+- ✅ Tudo em um único lugar
+- ✅ Um único deploy
+- ✅ Sem problemas de CORS
+- ✅ 100% gratuito
+- ✅ SSL automático
+
+### Opção Alternativa: Netlify + Render Separados
+
+Se preferir Backend separado:
+- **Guia Rápido**: [`GUIA-RAPIDO-DEPLOY.md`](GUIA-RAPIDO-DEPLOY.md) - 15 minutos
+- **Guia Completo**: [`COMO-COLOCAR-ONLINE.md`](COMO-COLOCAR-ONLINE.md) - Detalhado
+
+### O que você precisa:
+
+**Para Netlify (Recomendado):**
+- Conta no GitHub (gratuita)
+- Conta no Netlify (gratuita)
+
+**Para Netlify + Render:**
+- Conta no GitHub (gratuita)
+- Conta no Netlify (gratuita)
+- Conta no Render (gratuita)
+
+### Arquivos de configuração incluídos:
+- `netlify.toml` - Configuração completa (Frontend + Backend)
+- `netlify/functions/api.js` - Backend como Netlify Function
+- `render.yaml` - Configuração alternativa para Render
+- `.env.example` - Exemplo de variáveis de ambiente
 
 ## Suporte
 

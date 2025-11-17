@@ -9,6 +9,9 @@ import ServicoDetalhes from './pages/ServicoDetalhes'
 import NovoServico from './pages/NovoServico'
 import Acoes from './pages/Acoes'
 import GerenciarAcoes from './pages/GerenciarAcoes'
+import Metas2026 from './pages/Metas2026'
+import FormularioMeta from './pages/FormularioMeta'
+import MetaDetalhes from './pages/MetaDetalhes'
 
 function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -62,6 +65,12 @@ function NavBar() {
                   >
                     Gerenciar Ações
                   </Link>
+                  <Link
+                    to="/metas"
+                    className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-100"
+                  >
+                    Metas 2026
+                  </Link>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
@@ -98,9 +107,10 @@ function NavBar() {
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Mobile Menu */}
-          {mobileMenuOpen && (
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link
@@ -130,6 +140,13 @@ function NavBar() {
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-100"
                 >
                   Gerenciar Ações
+                </Link>
+                <Link
+                  to="/metas"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-100"
+                >
+                  Metas 2026
                 </Link>
                 <div className="border-t border-gray-200 pt-2 mt-2">
                   <div className="px-3 py-2 text-sm text-gray-700">
@@ -162,6 +179,10 @@ function AppContent() {
           <Route path="/servicos/:id" element={<PrivateRoute><ServicoDetalhes /></PrivateRoute>} />
           <Route path="/acoes" element={<PrivateRoute><Acoes /></PrivateRoute>} />
           <Route path="/gerenciar-acoes" element={<PrivateRoute><GerenciarAcoes /></PrivateRoute>} />
+          <Route path="/metas" element={<PrivateRoute><Metas2026 /></PrivateRoute>} />
+          <Route path="/metas/nova" element={<PrivateRoute><FormularioMeta /></PrivateRoute>} />
+          <Route path="/metas/:id" element={<PrivateRoute><MetaDetalhes /></PrivateRoute>} />
+          <Route path="/metas/:id/editar" element={<PrivateRoute><FormularioMeta /></PrivateRoute>} />
         </Routes>
       </main>
     </div>

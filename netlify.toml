@@ -1,0 +1,24 @@
+[build]
+  base = "frontend"
+  command = "npm install && npm run build"
+  publish = "dist"
+  functions = "../netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["backend/**"]
+
+# Redirecionar todas as chamadas da API para a function
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+# SPA fallback - deve vir por último
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

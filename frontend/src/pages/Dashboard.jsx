@@ -90,6 +90,69 @@ export default function Dashboard() {
         </div>
       </div>
 
+      {/* Metas 2026 */}
+      {stats.stats.totalMetas > 0 && (
+        <div className="card bg-gradient-to-br from-indigo-50 to-purple-50 border-2 border-indigo-200">
+          <div className="flex justify-between items-center mb-6">
+            <div>
+              <h3 className="text-xl font-bold text-gray-900">🎯 Metas 2026</h3>
+              <p className="text-sm text-gray-600 mt-1">Acompanhamento do planejamento anual</p>
+            </div>
+            <Link
+              to="/metas"
+              className="btn-primary"
+            >
+              Ver Todas
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            <div className="bg-white rounded-lg p-4 shadow-sm">
+              <p className="text-sm text-gray-600">Total de Metas</p>
+              <p className="text-3xl font-bold text-indigo-600 mt-1">{stats.stats.totalMetas}</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-sm">
+              <p className="text-sm text-gray-600">Concluídas</p>
+              <p className="text-3xl font-bold text-green-600 mt-1">{stats.stats.metasConcluidas}</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-sm">
+              <p className="text-sm text-gray-600">Em Andamento</p>
+              <p className="text-3xl font-bold text-blue-600 mt-1">{stats.stats.metasEmAndamento}</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-sm">
+              <p className="text-sm text-gray-600">Não Iniciadas</p>
+              <p className="text-3xl font-bold text-gray-600 mt-1">{stats.stats.metasNaoIniciadas}</p>
+            </div>
+          </div>
+
+          {stats.metasPorCategoria && stats.metasPorCategoria.length > 0 && (
+            <div>
+              <h4 className="text-sm font-semibold text-gray-700 mb-3">Progresso por Categoria</h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                {stats.metasPorCategoria.slice(0, 6).map(cat => (
+                  <div key={cat.categoria} className="bg-white rounded-lg p-3 shadow-sm">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-sm font-medium text-gray-900">{cat.categoria}</span>
+                      <span className="text-xs text-gray-500">{cat.total} metas</span>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-2">
+                      <div
+                        className="bg-gradient-to-r from-indigo-500 to-purple-500 h-2 rounded-full"
+                        style={{ width: `${cat.percentualConclusao}%` }}
+                      ></div>
+                    </div>
+                    <div className="flex justify-between mt-1 text-xs text-gray-600">
+                      <span>{cat.percentualConclusao}% concluído</span>
+                      <span>{cat.concluidas}/{cat.total}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Ações por Mês */}
       <div className="card">
         <h3 className="text-xl font-bold text-gray-900 mb-6">Ações por Mês</h3>
@@ -177,7 +240,7 @@ export default function Dashboard() {
       </div>
 
       {/* Quick Actions */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <Link
           to="/servicos/novo"
           className="card hover:shadow-lg transition-shadow cursor-pointer border-2 border-dashed border-gray-300 hover:border-primary-500"
@@ -187,6 +250,19 @@ export default function Dashboard() {
             <h3 className="text-lg font-semibold text-gray-900">Novo Serviço</h3>
             <p className="text-sm text-gray-600 mt-2">
               Adicionar um novo serviço ao sistema
+            </p>
+          </div>
+        </Link>
+
+        <Link
+          to="/metas/nova"
+          className="card hover:shadow-lg transition-shadow cursor-pointer border-2 border-dashed border-indigo-300 hover:border-indigo-500"
+        >
+          <div className="text-center py-8">
+            <div className="text-5xl mb-4">🎯</div>
+            <h3 className="text-lg font-semibold text-gray-900">Nova Meta 2026</h3>
+            <p className="text-sm text-gray-600 mt-2">
+              Criar uma nova meta para o planejamento
             </p>
           </div>
         </Link>

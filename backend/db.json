@@ -644,9 +644,15 @@
     }
   ],
   "reunioes": [],
+  "metas": [],
+  "submetas": [],
+  "atualizacoesMetas": [],
   "nextId": {
     "servicos": 28,
     "acoes": 54,
-    "reunioes": 1
+    "reunioes": 1,
+    "metas": 1,
+    "submetas": 1,
+    "atualizacoesMetas": 1
   }
 }
